@@ -728,14 +728,15 @@ dialog::backdrop{background:rgba(15,18,40,.6)}
 @media (max-width:760px){.faq{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:600px){.about .sg{padding:0 9px;font-size:13px;gap:5px}.about .sg svg{display:none}}
 
-/* homepage portrait: clean card with caption */
-.hero .arch{max-width:380px;margin-left:auto;position:relative}
+/* homepage portrait: cutout standing on a brand panel, head breaks the frame */
+.hero .arch{max-width:400px;margin-left:auto;position:relative;padding-top:56px}
 .hero .arch::before,.hero .arch::after{content:none!important}
-.hero .arch .ph-in{aspect-ratio:4/5;border:0;border-radius:20px;overflow:hidden;position:relative;background:#cfd6e4;box-shadow:0 24px 48px -18px rgba(20,32,70,.35)}
-.hero .arch .ph-in2,.hero .arch img{width:100%;height:100%;display:block}
-.hero .arch img{object-fit:cover;object-position:50% 10%;transform:none;-webkit-mask-image:none;mask-image:none}
-.hero .arch .ph-in::after{content:"Jocel Jualo";position:absolute;left:0;right:0;bottom:0;padding:54px 22px 18px;color:#fff;font:700 20px/1.2 var(--b);background:linear-gradient(180deg,transparent,rgba(10,22,52,.82));box-sizing:border-box}
-@media (max-width:900px){.hero .arch{max-width:300px;margin:10px auto 0}}
+.hero .arch .ph-in{aspect-ratio:1/1.02;border:0;border-radius:24px;overflow:visible;position:relative;box-shadow:0 26px 50px -20px rgba(0,60,160,.45);background:radial-gradient(circle at 78% 18%,rgba(255,255,255,.28) 0 14%,transparent 14.4%),radial-gradient(circle at 18% 88%,rgba(255,200,40,.9) 0 6%,transparent 6.4%),linear-gradient(160deg,#2a8cff,#0a58c9)}
+.hero .arch .ph-in::before{content:"";position:absolute;inset:0;border-radius:24px;background:radial-gradient(rgba(255,255,255,.28) 1.4px,transparent 1.8px) 0 0/16px 16px;-webkit-mask-image:linear-gradient(135deg,#000,transparent 55%);mask-image:linear-gradient(135deg,#000,transparent 55%)}
+.hero .arch .ph-in::after{content:none}
+.hero .arch .ph-in2{position:absolute;inset:0;background:none}
+.hero .arch img{position:absolute;left:50%;bottom:0;width:auto;height:118%;max-width:none;transform:translateX(-50%);object-fit:contain;-webkit-mask-image:none;mask-image:none;clip-path:inset(-30% -10% 0 -10% round 0 0 24px 24px);filter:drop-shadow(0 10px 18px rgba(0,30,90,.28))}
+@media (max-width:900px){.hero .arch{max-width:310px;margin:6px auto 0}}
 .hero .arch .yrs{display:none}
 .subs{display:none!important}
 #brandF{display:none}
@@ -1101,7 +1102,7 @@ V.dashboard = () => `
    <div class="cta">${talkBtn()}<a class="btn b-blue" href="#websites">See my work ${ic('arrow',16)}</a></div>
    <div class="contact-line"><a href="${wa('Hi Jocel!')}" target="_blank" rel="noopener">${ic('chat',15)}${esc(S.phoneDisplay)}</a><a href="mailto:${esc(S.email)}">${ic('mail',15)}${esc(S.email)}</a><span>${ic('globe',15)}Philippines (remote)</span><span>${ic('cal',15)}Available during US business hours</span></div>
   </div>
-  <div class="arch"><span class="chim" aria-hidden="true"></span><div class="ph-in"><div class="ph-in2"><img src="assets/jocel-portrait.jpg" alt="Portrait of Jocel Jualo" width="316" height="378"></div></div><span class="yrs"><b>6+ years</b>as a Virtual Assistant</span></div>
+  <div class="arch"><span class="chim" aria-hidden="true"></span><div class="ph-in"><div class="ph-in2"><img src="assets/jocel-cutout.png" alt="Portrait of Jocel Jualo" width="395" height="597"></div></div><span class="yrs"><b>6+ years</b>as a Virtual Assistant</span></div>
  </div>
  <div class="hero-sky">${SKY}</div>
  <div class="stats" aria-label="At a glance"><div style="--c:var(--blue)"><i>${ic('key',18)}</i><b>6+</b><span>years as a<br>Virtual Assistant</span></div><div style="--c:var(--green)"><i>${ic('home',18)}</i><b>6</b><span>service areas<br>under one person</span></div><div style="--c:var(--orange)"><i>${ic('web',18)}</i><b>10</b><span>websites designed<br>and built</span></div><div style="--c:var(--pink)"><i>${ic('grid',18)}</i><b>${TOOLS.reduce((n, t) => n + t[2].length, 0)}</b><span>tools in my<br>everyday kit</span></div></div>
