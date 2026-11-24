@@ -732,24 +732,19 @@ html,body{overflow-x:clip}
 @font-face{font-family:'Caveat';font-weight:400;font-display:swap;src:url(assets/fonts/caveat-latin-400-normal.woff2) format('woff2')}
 @font-face{font-family:'Caveat';font-weight:500;font-display:swap;src:url(assets/fonts/caveat-latin-500-normal.woff2) format('woff2')}
 /* homepage portrait: large cutout over colour orbs (inspo layout); notes sit beside her, never over her */
-.hero .arch.hp{max-width:500px;margin-left:auto;position:relative;aspect-ratio:1/1.1;isolation:isolate}
-.hero .arch.hp::before,.hero .arch.hp::after{content:none!important}
-.hp .cut{position:absolute;left:-16%;bottom:0;height:100%;width:auto;max-width:none;z-index:2;filter:drop-shadow(0 14px 22px rgba(10,30,90,.22));-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 99%);mask-image:linear-gradient(180deg,#000 82%,transparent 99%)}
-.hp .orb{position:absolute;border-radius:50%;z-index:1}
-.hp .o1{width:46%;aspect-ratio:1;right:-4%;top:14%;background:radial-gradient(circle at 32% 28%,#fff 0 4%,#8fc2ff 5% 22%,#0073ea 60%,#6a3fd6 100%);box-shadow:0 24px 40px -16px rgba(0,80,200,.5)}
-.hp .o2{width:20%;aspect-ratio:1;left:-12%;bottom:34%;background:radial-gradient(circle at 34% 30%,#fff 0 5%,#ffd9ee 6% 20%,#ff5fb6 62%,#ffc83d 100%);box-shadow:0 18px 30px -14px rgba(255,80,170,.55)}
-.hp .o3{width:14%;aspect-ratio:1;right:4%;bottom:6%;background:radial-gradient(circle at 34% 30%,#fff 0 6%,#b9f5d6 7% 24%,#00c875 70%,#00995a 100%);box-shadow:0 14px 24px -12px rgba(0,160,100,.55)}
-.hp .gcard{position:absolute;z-index:3;right:-4%;top:60%;transform:rotate(3deg);background:rgba(24,28,52,.82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px 12px;box-shadow:0 20px 40px -14px rgba(10,20,60,.55)}
-.hp .gcard b{display:block;font:600 17px/1.25 var(--b);color:#fff;margin-bottom:8px}
-.hp .gcard svg{width:116px;height:38px;display:block}
-.hp .hand{position:absolute;z-index:3;right:-6%;top:-2%;font:500 30px/1.05 'Caveat','Segoe Script',cursive;color:var(--ink);transform:rotate(-10deg);text-align:left;letter-spacing:.2px}
-.hp .hand svg{display:none}
-@media (min-width:901px) and (max-width:959px){.hp .gcard{right:-12%;top:66%}}
-@media (max-width:900px){.hero .arch.hp{max-width:340px;margin:14px auto 0}.hp .cut{left:-26%}.hp .o2{left:-4%}.hp .hand{position:absolute;z-index:3;right:-6%;top:-2%;font:500 30px/1.05 'Caveat','Segoe Script',cursive;color:var(--ink);transform:rotate(-10deg);text-align:left;letter-spacing:.2px}.hp .hand svg{width:34px}.hp .gcard{position:absolute;z-index:3;right:-4%;top:60%;transform:rotate(3deg);background:rgba(24,28,52,.82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px 12px;box-shadow:0 20px 40px -14px rgba(10,20,60,.55)}.hp .gcard b{display:block;font:600 17px/1.25 var(--b);color:#fff;margin-bottom:8px}.hp .gcard svg{width:76px;height:26px}.hp .gcard{right:-10%;padding:12px 14px 10px}.hp .gcard b{font-size:14px}.hp .hand{right:-10%;font-size:22px}}
 .hero .arch .yrs{display:none}
 .subs{display:none!important}
 #brandF{display:none}
 @media (max-width:600px){.stats div{padding:14px 10px;gap:8px}.stats b{font-size:30px}.stats span{min-width:0;font-size:12.5px}}
+
+.hero .arch.hp{max-width:460px;margin-left:auto;position:relative;aspect-ratio:1/1.08;isolation:isolate;border-radius:28px;overflow:hidden;background:linear-gradient(180deg,#e3eeff 0%,#f4f8ff 70%);border:1px solid rgba(0,115,234,.15);box-shadow:0 24px 50px -24px rgba(0,60,160,.35)}
+.hero .arch.hp::before,.hero .arch.hp::after{content:none!important}
+.hp .sky{position:absolute;left:0;right:0;bottom:0;width:100%;height:58%;z-index:1}
+.hp .cut{position:absolute;left:50%;transform:translateX(-50%);bottom:0;height:98%;width:auto;max-width:none;z-index:2;filter:drop-shadow(0 10px 18px rgba(10,30,90,.22))}
+.hp .chip{position:absolute;z-index:3;width:52px;height:52px;border-radius:15px;background:#fff;display:grid;place-items:center;box-shadow:0 12px 24px -10px rgba(10,30,90,.35)}
+.hp .chip svg{width:26px;height:26px}
+.hp .c1{left:5%;top:9%;transform:rotate(-6deg)}.hp .c2{right:5%;top:7%;transform:rotate(6deg)}.hp .c3{right:4%;top:40%}
+@media (max-width:900px){.hero .arch.hp{max-width:340px;margin:14px auto 0}.hp .chip{width:42px;height:42px;border-radius:12px}.hp .chip svg{width:21px;height:21px}}
 </style>
 </head>
 <body>
@@ -1112,7 +1107,7 @@ V.dashboard = () => `
    <div class="cta">${talkBtn()}<a class="btn b-blue" href="#websites">See my work ${ic('arrow',16)}</a></div>
    <div class="contact-line"><a href="${wa('Hi Jocel!')}" target="_blank" rel="noopener">${ic('chat',15)}${esc(S.phoneDisplay)}</a><a href="mailto:${esc(S.email)}">${ic('mail',15)}${esc(S.email)}</a><span>${ic('globe',15)}Philippines (remote)</span><span>${ic('cal',15)}Available during US business hours</span></div>
   </div>
-  <div class="arch hp"><span class="orb o1" aria-hidden="true"></span><span class="orb o2" aria-hidden="true"></span><span class="orb o3" aria-hidden="true"></span><img class="cut" src="assets/jocel-cutout.png" alt="Portrait of Jocel Jualo" width="395" height="597"><div class="gcard" aria-hidden="true"><b>Turn leads<br>into leases</b><svg viewBox="0 0 120 40" fill="none"><path d="M2 32 C18 30 22 16 38 20 S60 34 76 18 S100 8 118 4" stroke="#b79cff" stroke-width="2.6" stroke-linecap="round"/><circle cx="118" cy="4" r="3.2" fill="#b79cff"/></svg></div><span class="hand" aria-hidden="true">Virtual Assistant<br>GHL Specialist<br>Problem Solver<svg viewBox="0 0 60 50" fill="none"><path d="M4 6 C30 2 50 14 52 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M44 33 L52 42 L58 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  <div class="arch hp"><svg class="sky" viewBox="0 0 460 280" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#bcd6fb"><rect x="14" y="70" width="64" height="210"/><rect x="92" y="130" width="48" height="150"/><rect x="330" y="50" width="70" height="230"/><rect x="408" y="120" width="44" height="160"/></g><g fill="#9cc2f7"><path d="M150 190l40-34 40 34v90h-80z"/><path d="M262 200l36-30 36 30v80h-72z"/></g><g fill="#fff" opacity=".85"><rect x="26" y="86" width="10" height="10"/><rect x="48" y="86" width="10" height="10"/><rect x="26" y="112" width="10" height="10"/><rect x="48" y="112" width="10" height="10"/><rect x="26" y="138" width="10" height="10"/><rect x="48" y="138" width="10" height="10"/><rect x="344" y="68" width="10" height="10"/><rect x="368" y="68" width="10" height="10"/><rect x="344" y="94" width="10" height="10"/><rect x="368" y="94" width="10" height="10"/><rect x="344" y="120" width="10" height="10"/><rect x="368" y="120" width="10" height="10"/><rect x="180" y="214" width="14" height="16"/><rect x="288" y="222" width="14" height="16"/></g><rect y="262" width="460" height="18" fill="#7fb0f3"/></svg><img class="cut" src="assets/jocel-cutout.png" alt="Portrait of Jocel Jualo" width="395" height="597"><span class="chip c1" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#0073EA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span><span class="chip c2" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#FFAA00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="15" r="4"/><path d="M11 12l9-9"/><path d="M16 7l3 3"/></svg></span><span class="chip c3" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="#00C875" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-5h4v5"/></svg></span></div>
  </div>
  <div class="hero-sky">${SKY}</div>
  <div class="stats" aria-label="At a glance"><div style="--c:var(--blue)"><i>${ic('key',18)}</i><b>6+</b><span>years as a<br>Virtual Assistant</span></div><div style="--c:var(--green)"><i>${ic('home',18)}</i><b>6</b><span>service areas<br>under one person</span></div><div style="--c:var(--orange)"><i>${ic('web',18)}</i><b>10</b><span>websites designed<br>and built</span></div><div style="--c:var(--pink)"><i>${ic('grid',18)}</i><b>${TOOLS.reduce((n, t) => n + t[2].length, 0)}</b><span>tools in my<br>everyday kit</span></div></div>
