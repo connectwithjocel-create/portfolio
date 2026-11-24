@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Jocel Jualo | Real Estate VA & GoHighLevel Specialist</title>
-<meta name="description" content="Jocel is a Philippines-based Real Estate Virtual Assistant and GoHighLevel Specialist with five-plus years of VA experience: real estate operations, GoHighLevel CRM and automation, websites and creative support.">
+<meta name="description" content="Jocel is a Philippines-based Real Estate Virtual Assistant and GoHighLevel Specialist with six-plus years of VA experience: real estate operations, GoHighLevel CRM and automation, websites and creative support.">
 <meta name="theme-color" content="#0073EA">
 <!-- Add once your domain is confirmed: <link rel="canonical" href="https://YOUR-DOMAIN/"> -->
 <meta property="og:type" content="website">
@@ -738,6 +738,8 @@ dialog::backdrop{background:rgba(15,18,40,.6)}
 .hero .arch .yrs{left:auto;right:4%;bottom:7%;transform:none;border:1px solid var(--line)}
 @media (max-width:900px){.hero .arch{max-width:320px;margin:10px auto 0}.hero .arch .yrs{right:2%}}
 .hero .arch .yrs{display:none}
+.subs{display:none!important}
+#brandF{display:none}
 </style>
 </head>
 <body>
@@ -1100,10 +1102,10 @@ V.dashboard = () => `
    <div class="cta">${talkBtn()}<a class="btn b-blue" href="#websites">See my work ${ic('arrow',16)}</a></div>
    <div class="contact-line"><a href="${wa('Hi Jocel!')}" target="_blank" rel="noopener">${ic('chat',15)}${esc(S.phoneDisplay)}</a><a href="mailto:${esc(S.email)}">${ic('mail',15)}${esc(S.email)}</a><span>${ic('globe',15)}Philippines (remote)</span><span>${ic('cal',15)}Available during US business hours</span></div>
   </div>
-  <div class="arch"><span class="chim" aria-hidden="true"></span><div class="ph-in"><div class="ph-in2"><img src="assets/jocel-portrait.jpg" alt="Portrait of Jocel Jualo" width="316" height="378"></div></div><span class="yrs"><b>5+ years</b>as a Virtual Assistant</span></div>
+  <div class="arch"><span class="chim" aria-hidden="true"></span><div class="ph-in"><div class="ph-in2"><img src="assets/jocel-portrait.jpg" alt="Portrait of Jocel Jualo" width="316" height="378"></div></div><span class="yrs"><b>6+ years</b>as a Virtual Assistant</span></div>
  </div>
  <div class="hero-sky">${SKY}</div>
- <div class="stats" aria-label="At a glance"><div style="--c:var(--blue)"><i>${ic('key',18)}</i><b>5+</b><span>years as a<br>Virtual Assistant</span></div><div style="--c:var(--green)"><i>${ic('home',18)}</i><b>6</b><span>service areas<br>under one person</span></div><div style="--c:var(--orange)"><i>${ic('web',18)}</i><b>10</b><span>websites designed<br>and built</span></div><div style="--c:var(--pink)"><i>${ic('grid',18)}</i><b>${TOOLS.reduce((n, t) => n + t[2].length, 0)}</b><span>tools in my<br>everyday kit</span></div></div>
+ <div class="stats" aria-label="At a glance"><div style="--c:var(--blue)"><i>${ic('key',18)}</i><b>6+</b><span>years as a<br>Virtual Assistant</span></div><div style="--c:var(--green)"><i>${ic('home',18)}</i><b>6</b><span>service areas<br>under one person</span></div><div style="--c:var(--orange)"><i>${ic('web',18)}</i><b>10</b><span>websites designed<br>and built</span></div><div style="--c:var(--pink)"><i>${ic('grid',18)}</i><b>${TOOLS.reduce((n, t) => n + t[2].length, 0)}</b><span>tools in my<br>everyday kit</span></div></div>
  <div class="block">${head('Featured websites', 'Three of the websites I designed and built. Open any of them live.', 'var(--orange)')}${featuredSites()}
   <p style="margin-top:14px"><a class="btn b-line" href="#websites">See all 10 websites ${ic('arrow',16)}</a></p></div>
  <div class="block">${head('See my work in action', 'A quick tour of the systems I run every day. ', 'var(--pink)')}${carousel('dashCar', GHL_SCREENS.slice(0,4), {chips:false})}</div>
@@ -1126,7 +1128,7 @@ V.dashboard = () => `
    ['ghl-crm','purple','flow','GoHighLevel and CRM','Pipelines, workflows, forms and reporting.'],
    ['websites','orange','web','Websites','Live sites with desktop and mobile previews.'],
    ['creative-studio','pink','palette','Creative Studio','Social graphics, campaigns, articles and video.'],
-   ['experience','green','brief','Experience','Five-plus years of work, grouped by service.'],
+   ['experience','green','brief','Experience','Six-plus years of work, grouped by service.'],
    ['toolkit','sky','grid','Toolkit','The platforms I work in every week.']
   ].map(([v,c,i,t,d]) => `<button class="ex" type="button" data-go="${v}" style="${cv(c)}"><span class="xi">${ic(i,18)}</span><span class="txt"><b>${t}</b><small class="muted" style="font-size:12.5px;line-height:1.35">${d}</small></span><u aria-hidden="true">${ic('arrow',14)}</u></button>`).join('')}
   <button class="ex solid" type="button" data-go="partnership" style="${cv('blue')}"><span class="xi">${ic('users',18)}</span><span class="txt"><b>Work with me</b><small style="font-size:12.5px;line-height:1.35;color:#DCE8FF">Rates, quote and payment options.</small></span><u aria-hidden="true">${ic('arrow',14)}</u></button></div></div>
@@ -1136,23 +1138,23 @@ V.about = () => `
  <div class="about">
   <aside class="pcard"><div class="arch"><span class="chim" aria-hidden="true"></span><div class="ph-in"><div class="ph-in2"><img src="assets/jocel-portrait.jpg" alt="Portrait of Jocel Jualo" width="316" height="378"></div></div></div>
    <h2>Jocel Jualo</h2><p class="role">Real Estate VA · GoHighLevel Specialist</p>
-   <ul class="pfacts"><li><i>${ic('brief',16)}</i><span><small>Experience</small><b>5+ years as a Virtual Assistant</b></span></li><li><i>${ic('award',16)}</i><span><small>Education</small><b>BS Mining Engineering</b></span></li><li><i>${ic('globe',16)}</i><span><small>Based in</small><b>Philippines · remote</b></span></li></ul>
+   <ul class="pfacts"><li><i>${ic('brief',16)}</i><span><small>Experience</small><b>6+ years as a Virtual Assistant</b></span></li><li><i>${ic('award',16)}</i><span><small>Education</small><b>BS Mining Engineering</b></span></li><li><i>${ic('globe',16)}</i><span><small>Based in</small><b>Philippines · remote</b></span></li></ul>
    <div class="pbtn">${talkBtn()}${pagerBtn()}</div></aside>
   <div>
    <div class="seg" role="tablist" aria-label="About Jocel">${[['who-i-am','Who I Am','user'],['my-background','My Background','award'],['what-i-handle','What I Handle','layers']].map(([k,l,i],n) => `<button class="sg" role="tab" type="button" id="at-${k}" aria-controls="ap-${k}" aria-selected="${n===0}" data-k="${k}">${ic(i,16)}${l}</button>`).join('')}</div>
    <div class="card apanel" style="margin-top:14px">
     <div role="tabpanel" id="ap-who-i-am" aria-labelledby="at-who-i-am">
      <h1>Hi, I’m Jocel.</h1>
-     <p>I’m a <b>Virtual Assistant focused on real estate operations and GoHighLevel</b>, based in the Philippines. I earned a Bachelor’s degree in Mining Engineering, but my interest in helping businesses run well led me to remote work, and I’ve spent the past five-plus years as a Virtual Assistant.</p>
+     <p>I’m a <b>Virtual Assistant focused on real estate operations and GoHighLevel</b>, based in the Philippines. I earned a Bachelor’s degree in Mining Engineering, but my interest in helping businesses run well led me to remote work, and I’ve spent the past six-plus years as a Virtual Assistant.</p>
      <p>I set up GHL subaccounts, build pipelines, manage listings, coordinate transactions, create nurture sequences, run social content and keep websites current. I enjoy learning new tools, solving problems and improving processes, so business owners can focus on what matters most. I’m organized, dependable, adaptable and committed to quality work.</p>
      <p>Outside of work, I’m a church leader who loves sharing the word of God and encouraging people to live with purpose.</p>
-     <div class="astats"><div><b>5+ yrs</b><span>as a Virtual Assistant</span></div><div><b>6</b><span>service areas</span></div><div><b>US hours</b><span>remote from the Philippines</span></div></div><a class="btn b-line" style="margin-top:18px" href="#partnership">See partnership ${ic('arrow',15)}</a>
+     <div class="astats"><div><b>6+ yrs</b><span>as a Virtual Assistant</span></div><div><b>6</b><span>service areas</span></div><div><b>US hours</b><span>remote from the Philippines</span></div></div><a class="btn b-line" style="margin-top:18px" href="#partnership">See partnership ${ic('arrow',15)}</a>
     </div>
     <div role="tabpanel" id="ap-my-background" aria-labelledby="at-my-background" hidden>
      <h1>More than administrative support.</h1>
      <p>I started out providing administrative support, personal assistance and business operations coordination. My work then moved into real estate: property management, rental operations, appointment coordination, document follow-up, maintenance workflows and short-term rental operations.</p>
      <p>Along the way I built the technical side: GoHighLevel, CRM management, website development, automation, digital marketing and basic SEO. I bring together the organization of an experienced Virtual Assistant and the technical skills needed to support today’s real estate businesses.</p>
-     <dl class="dlg" style="padding:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:14.5px;margin:16px 0 0"><dt class="muted">Education</dt><dd style="margin:0">BS Mining Engineering, Caraga State University</dd><dt class="muted">Experience</dt><dd style="margin:0">5+ years as a Virtual Assistant</dd><dt class="muted">Based in</dt><dd style="margin:0">Philippines, working remotely</dd></dl>
+     <dl class="dlg" style="padding:0;display:grid;grid-template-columns:auto 1fr;gap:8px 18px;font-size:14.5px;margin:16px 0 0"><dt class="muted">Education</dt><dd style="margin:0">BS Mining Engineering, Caraga State University</dd><dt class="muted">Experience</dt><dd style="margin:0">6+ years as a Virtual Assistant</dd><dt class="muted">Based in</dt><dd style="margin:0">Philippines, working remotely</dd></dl>
     </div>
     <div role="tabpanel" id="ap-what-i-handle" aria-labelledby="at-what-i-handle" hidden>
      <h1>What I handle</h1>
@@ -1228,7 +1230,7 @@ V.ads = () => `
  ${cta('Want ads that feed your pipeline?','Tell me your offer and market, and we’ll plan the setup.')}`;
 
 V.experience = () => `
- ${banner('green','brief','Experience','Five-plus years as a Virtual Assistant for real estate teams, marketing agencies and business owners, grouped by the services I provide.')}
+ ${banner('green','brief','Experience','Six-plus years as a Virtual Assistant for real estate teams, marketing agencies and business owners, grouped by the services I provide.')}
  <div class="block" style="margin-top:28px">
   <ol class="path">${[
    ['award','yellow','Education','BS Mining Engineering','Caraga State University'],
@@ -1259,13 +1261,13 @@ V.partnership = () => `
   ['pt','blue','users','Part-time support','20 hrs / week',['Agents','Landlords','Small teams'],[['inbox','Inbox, calendar and lead follow-up'],['chat','Listings, showings, tenant communication'],['chart','CRM clean-up and weekly reporting']],'<b>$160 to $300</b> a week at $8 to $15 an hour',20,'re'],
   ['ft','green','brief','Full-time partner','40 hrs / week',['Property managers','Growing teams'],[['layers','Everything in part-time'],['wrench','Leasing, maintenance and vacation-rental coordination'],['flow','GoHighLevel workflows built and maintained'],['bell','Daily end-of-day updates']],'<b>$320 to $600</b> a week at $8 to $15 an hour',40,'custom'],
   ['gb','purple','flow','GHL build project','Fixed scope',['One-time setup'],[['file','Pipelines, forms, calendars, workflows'],['web','Websites and landing pages'],['clip','Loom walkthrough and handover notes']],'<b>Custom quote</b> after a short call',null,'ghl']
- ].map(([k,c,i,t,hrs,who,items,price,h,svc],n) => `<button class="plan" type="button" aria-pressed="${n===0}" data-plan="${k}" data-h="${h ?? ''}" data-svc="${svc}" style="${cv(c)}"><span class="ok">${ic('check',14,3)}</span><span class="plbl">${{pt:'Hourly support',ft:'Dedicated partner',gb:'Fixed project'}[k]}</span><span class="ph"><i>${ic(i,16)}</i>${t}</span><span class="hrs">${hrs}</span><span class="chips">${who.map(w => `<span class="chip">${w}</span>`).join('')}</span><ul>${items.map(([ii,tt]) => `<li><i>${ic(ii,12)}</i>${tt}</li>`).join('')}</ul><span class="price">${price}</span></button>`).join('')}</div>
+ ].map(([k,c,i,t,hrs,who,items,price,h,svc],n) => `<button class="plan" type="button" aria-pressed="${n===1}" data-plan="${k}" data-h="${h ?? ''}" data-svc="${svc}" style="${cv(c)}"><span class="ok">${ic('check',14,3)}</span><span class="plbl">${{pt:'Hourly support',ft:'Dedicated partner',gb:'Fixed project'}[k]}</span><span class="ph"><i>${ic(i,16)}</i>${t}</span><span class="hrs">${hrs}</span><span class="chips">${who.map(w => `<span class="chip">${w}</span>`).join('')}</span><ul>${items.map(([ii,tt]) => `<li><i>${ic(ii,12)}</i>${tt}</li>`).join('')}</ul><span class="price">${price}</span></button>`).join('')}</div>
 
  <div class="block" id="quote">${head('Build your quote','Your WhatsApp message fills in automatically.')}
   <div class="quote">
    <form class="ql" id="calcForm" novalidate onsubmit="return false">
     <div class="qlab">Project details</div>
-    <div class="fld"><label for="cH">Weekly hours</label><input id="cH" type="number" inputmode="numeric" min="5" max="60" step="1" value="20" aria-describedby="cHe"><input id="cHr" type="range" min="5" max="60" step="1" value="20" aria-label="Weekly hours slider"><div class="hint"><span>5 to 60 hours per week</span></div><div class="err" id="cHe" role="alert"></div></div>
+    <div class="fld"><label for="cH">Weekly hours</label><input id="cH" type="number" inputmode="numeric" min="5" max="60" step="1" value="40" aria-describedby="cHe"><input id="cHr" type="range" min="5" max="60" step="1" value="40" aria-label="Weekly hours slider"><div class="hint"><span>5 to 60 hours per week</span></div><div class="err" id="cHe" role="alert"></div></div>
     <div class="fld"><label for="cR">Hourly rate (USD)</label><div class="money"><span aria-hidden="true">$</span><input id="cR" type="number" inputmode="decimal" min="1" max="200" step="0.5" value="8" aria-describedby="cRh cRe"></div><div class="hint" id="cRh"><span>Range: $8 to $15 per hour</span><span style="color:var(--orange);font-weight:600">Negotiable</span></div><div class="hint"><span>Illustrative rate. Final pricing depends on the agreed scope of work.</span></div><div class="err" id="cRe" role="alert"></div></div>
     <div class="fld" style="margin:0"><label for="cS">Service type</label><select id="cS"></select></div>
    </form>
@@ -1434,8 +1436,9 @@ INIT.websites = el => {
  const draw = () => {
   $('#siteF').innerHTML = F.map((x,n) => `<button class="ft" type="button" style="--c:${['var(--pink)','var(--orange)','var(--yellow)','var(--purple)','var(--blue)','var(--green)','var(--sky)'][n]}" aria-pressed="${x === f}" data-f="${esc(x)}">${esc(x)} <span class="muted" style="font-size:12px">${SITES.filter(p => inF(p, x)).length}</span></button>`).join('');
   const list = SITES.filter(p => inF(p, f));
-  $('#siteGrid').innerHTML = list.length ? list.map(p => `<button class="site" type="button" data-site="${p.id}" style="${cv(p.col)}" aria-label="${esc(p.name)}: details"><div class="media">${siteMedia(p, false)}</div><div class="sb"><h4>${esc(p.name)}</h4><small>${esc(p.industry)}</small><small class="loc">${ic('pin',12)}${esc(p.tag)}</small></div></button>`).join('')
+  $('#siteGrid').innerHTML = list.length ? list.map(p => `<button class="site" type="button" data-site="${p.id}" style="${cv(p.col)}" aria-label="${esc(p.name)}: details"><div class="media">${siteMedia(p, true)}</div><div class="sb"><h4>${esc(p.name)}</h4><small>${esc(p.industry)}</small><small class="loc">${ic('pin',12)}${esc(p.tag)}</small></div></button>`).join('')
    : `<div class="empty"><b style="color:var(--ink)">CRM and automation builds live in their own tab.</b><br><a href="#ghl-crm">Open GHL and CRM</a></div>`;
+  initFrames($("#siteGrid")); requestAnimationFrame(scaleFrames);
  };
  $('#siteF', el).addEventListener('click', e => { const b = e.target.closest('.ft'); if (b) { f = b.dataset.f; draw(); } });
  draw();
@@ -1497,7 +1500,7 @@ INIT.partnership = el => {
  $('#cS').innerHTML = svcOpts.map(([v,l]) => `<option value="${v}">${l}</option>`).join('');
  $('#fS').innerHTML = '<option value="">Select a service</option>' + svcOpts.map(([v,l]) => `<option value="${v}">${l}</option>`).join('') + '<option value="payment">Payment details request</option>';
  const cH = $('#cH'), cHr = $('#cHr'), cR = $('#cR'), cS = $('#cS');
- let st = null, plan = 'Part-time support';
+ let st = null, plan = 'Full-time partner'; cS.value = 'custom';
  const val = (inp, min, max, err, label) => { const raw = inp.value.trim(), v = Number(raw); let m = ''; if (raw === '' || !Number.isFinite(v)) m = `Enter ${label}.`; else if (v < min || v > max) m = `Must be between ${min} and ${max}.`; inp.setAttribute('aria-invalid', !!m); $(err).textContent = m; return m ? null : v; };
  const calc = () => {
   const h = val(cH, 5, 60, '#cHe', 'weekly hours'), r = val(cR, 1, 200, '#cRe', 'an hourly rate'), sl = cS.options[cS.selectedIndex].text;
