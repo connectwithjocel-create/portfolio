@@ -15,7 +15,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230073EA'/%3E%3Ctext x='32' y='46' font-family='Arial' font-weight='700' font-size='38' fill='%23fff' text-anchor='middle'%3EJ%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Jocel Jualo","jobTitle":"Real Estate Virtual Assistant & GoHighLevel Specialist","email":"mailto:connectwithjocel@gmail.com","address":{"@type":"PostalAddress","addressCountry":"PH"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Caraga State University"},"knowsAbout":["Real estate virtual assistance","Property management support","Short-term rental operations","GoHighLevel CRM","Marketing automation","Website development","Basic SEO"]}
 </script>
@@ -729,6 +729,8 @@ dialog::backdrop{background:rgba(15,18,40,.6)}
 @media (max-width:600px){.about .sg{padding:0 9px;font-size:13px;gap:5px}.about .sg svg{display:none}}
 
 html,body{overflow-x:clip}
+@font-face{font-family:'Caveat';font-weight:400;font-display:swap;src:url(assets/fonts/caveat-latin-400-normal.woff2) format('woff2')}
+@font-face{font-family:'Caveat';font-weight:500;font-display:swap;src:url(assets/fonts/caveat-latin-500-normal.woff2) format('woff2')}
 /* homepage portrait: large cutout over colour orbs (inspo layout); notes sit beside her, never over her */
 .hero .arch.hp{max-width:500px;margin-left:auto;position:relative;aspect-ratio:1/1.1;isolation:isolate}
 .hero .arch.hp::before,.hero .arch.hp::after{content:none!important}
@@ -737,12 +739,12 @@ html,body{overflow-x:clip}
 .hp .o1{width:46%;aspect-ratio:1;right:-4%;top:14%;background:radial-gradient(circle at 32% 28%,#fff 0 4%,#8fc2ff 5% 22%,#0073ea 60%,#6a3fd6 100%);box-shadow:0 24px 40px -16px rgba(0,80,200,.5)}
 .hp .o2{width:20%;aspect-ratio:1;left:-12%;bottom:34%;background:radial-gradient(circle at 34% 30%,#fff 0 5%,#ffd9ee 6% 20%,#ff5fb6 62%,#ffc83d 100%);box-shadow:0 18px 30px -14px rgba(255,80,170,.55)}
 .hp .o3{width:14%;aspect-ratio:1;right:4%;bottom:6%;background:radial-gradient(circle at 34% 30%,#fff 0 6%,#b9f5d6 7% 24%,#00c875 70%,#00995a 100%);box-shadow:0 14px 24px -12px rgba(0,160,100,.55)}
-.hp .gcard{position:absolute;z-index:3;right:-4%;top:60%;transform:rotate(4deg);background:rgba(255,255,255,.8);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.9);border-radius:16px;padding:14px 16px 10px;box-shadow:0 18px 36px -14px rgba(20,40,100,.35)}
-.hp .gcard b{display:block;font:700 17px/1.2 var(--b);color:var(--ink);margin-bottom:8px}
+.hp .gcard{position:absolute;z-index:3;right:-4%;top:60%;transform:rotate(3deg);background:rgba(24,28,52,.82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px 12px;box-shadow:0 20px 40px -14px rgba(10,20,60,.55)}
+.hp .gcard b{display:block;font:600 17px/1.25 var(--b);color:#fff;margin-bottom:8px}
 .hp .gcard svg{width:116px;height:38px;display:block}
-.hp .hand{position:absolute;z-index:3;right:-2%;top:0;font:700 25px/1.05 'Caveat','Segoe Script','Bradley Hand',cursive;color:var(--ink);transform:rotate(-6deg);text-align:left}
+.hp .hand{position:absolute;z-index:3;right:-6%;top:-2%;font:500 30px/1.05 'Caveat','Segoe Script',cursive;color:var(--ink);transform:rotate(-10deg);text-align:left;letter-spacing:.2px}
 .hp .hand svg{display:none}
-@media (max-width:900px){.hero .arch.hp{max-width:340px;margin:14px auto 0}.hp .cut{left:-4%}.hp .o2{left:-4%}.hp .hand{font-size:19px}.hp .hand svg{width:34px}.hp .gcard{padding:10px 12px 8px}.hp .gcard b{font-size:14px}.hp .gcard svg{width:90px;height:30px}}
+@media (max-width:900px){.hero .arch.hp{max-width:340px;margin:14px auto 0}.hp .cut{left:-4%}.hp .o2{left:-4%}.hp .hand{position:absolute;z-index:3;right:-6%;top:-2%;font:500 30px/1.05 'Caveat','Segoe Script',cursive;color:var(--ink);transform:rotate(-10deg);text-align:left;letter-spacing:.2px}.hp .hand svg{width:34px}.hp .gcard{position:absolute;z-index:3;right:-4%;top:60%;transform:rotate(3deg);background:rgba(24,28,52,.82);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:16px 18px 12px;box-shadow:0 20px 40px -14px rgba(10,20,60,.55)}.hp .gcard b{display:block;font:600 17px/1.25 var(--b);color:#fff;margin-bottom:8px}.hp .gcard svg{width:90px;height:30px}}
 .hero .arch .yrs{display:none}
 .subs{display:none!important}
 #brandF{display:none}
@@ -1109,7 +1111,7 @@ V.dashboard = () => `
    <div class="cta">${talkBtn()}<a class="btn b-blue" href="#websites">See my work ${ic('arrow',16)}</a></div>
    <div class="contact-line"><a href="${wa('Hi Jocel!')}" target="_blank" rel="noopener">${ic('chat',15)}${esc(S.phoneDisplay)}</a><a href="mailto:${esc(S.email)}">${ic('mail',15)}${esc(S.email)}</a><span>${ic('globe',15)}Philippines (remote)</span><span>${ic('cal',15)}Available during US business hours</span></div>
   </div>
-  <div class="arch hp"><span class="orb o1" aria-hidden="true"></span><span class="orb o2" aria-hidden="true"></span><span class="orb o3" aria-hidden="true"></span><img class="cut" src="assets/jocel-cutout.png" alt="Portrait of Jocel Jualo" width="395" height="597"><div class="gcard" aria-hidden="true"><b>Turn leads<br>into leases</b><svg viewBox="0 0 120 40" fill="none"><path d="M2 32 C18 30 22 16 38 20 S60 34 76 18 S100 8 118 4" stroke="var(--blue)" stroke-width="2.6" stroke-linecap="round"/><circle cx="118" cy="4" r="3.2" fill="var(--blue)"/></svg></div><span class="hand" aria-hidden="true">Real estate VA<br>&amp; GoHighLevel<br>specialist<svg viewBox="0 0 60 50" fill="none"><path d="M4 6 C30 2 50 14 52 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M44 33 L52 42 L58 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
+  <div class="arch hp"><span class="orb o1" aria-hidden="true"></span><span class="orb o2" aria-hidden="true"></span><span class="orb o3" aria-hidden="true"></span><img class="cut" src="assets/jocel-cutout.png" alt="Portrait of Jocel Jualo" width="395" height="597"><div class="gcard" aria-hidden="true"><b>Turn leads<br>into leases</b><svg viewBox="0 0 120 40" fill="none"><path d="M2 32 C18 30 22 16 38 20 S60 34 76 18 S100 8 118 4" stroke="#b79cff" stroke-width="2.6" stroke-linecap="round"/><circle cx="118" cy="4" r="3.2" fill="#b79cff"/></svg></div><span class="hand" aria-hidden="true">Virtual Assistant<br>GHL Specialist<br>Problem Solver<svg viewBox="0 0 60 50" fill="none"><path d="M4 6 C30 2 50 14 52 40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="M44 33 L52 42 L58 31" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span></div>
  </div>
  <div class="hero-sky">${SKY}</div>
  <div class="stats" aria-label="At a glance"><div style="--c:var(--blue)"><i>${ic('key',18)}</i><b>6+</b><span>years as a<br>Virtual Assistant</span></div><div style="--c:var(--green)"><i>${ic('home',18)}</i><b>6</b><span>service areas<br>under one person</span></div><div style="--c:var(--orange)"><i>${ic('web',18)}</i><b>10</b><span>websites designed<br>and built</span></div><div style="--c:var(--pink)"><i>${ic('grid',18)}</i><b>${TOOLS.reduce((n, t) => n + t[2].length, 0)}</b><span>tools in my<br>everyday kit</span></div></div>
