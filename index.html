@@ -1400,7 +1400,7 @@ $('#lbDlg').addEventListener('keydown', e => { if (e.key === 'ArrowRight' || e.k
 /* dark mode */
 const setMode = m => { document.documentElement.dataset.mode = m; $('#mode').innerHTML = ic(m === 'dark' ? 'sun' : 'moon', 18); $('#mode').setAttribute('aria-label', m === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'); try { localStorage.setItem('jj-mode', m); } catch {} };
 let saved = null; try { saved = localStorage.getItem('jj-mode'); } catch {}
-setMode(saved || 'light');
+setMode(saved || 'dark');
 $('#mode').addEventListener('click', () => setMode(document.documentElement.dataset.mode === 'dark' ? 'light' : 'dark'));
 $('#yr').textContent = new Date().getFullYear();
 $('#ftWa').href = wa('Hi Jocel!');
