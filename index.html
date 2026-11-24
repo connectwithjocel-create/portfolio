@@ -1209,11 +1209,17 @@ V['creative-studio'] = () => `
 V.ads = () => `
  ${banner('yellow','mega','Google and FB Ads','Campaign setup support, audience and keyword research, and the landing pages and lead workflows behind every ad.')}
  <div class="block" style="margin-top:28px">${carousel('adsCar', [
- {title:'Meta campaigns', img:'assets/ads/ads-meta-campaigns.jpg', w:1600, h:1000, kicker:'Meta Ads', desc:'Lead, traffic and retargeting campaigns for a real estate brand, with the Facebook ad preview.', tools:['Meta Ads','Facebook','Instagram']},
- {title:'Facebook feed ad', img:'assets/ads/ads-facebook-feed.jpg', w:1080, h:1350, kicker:'Facebook', desc:'A sponsored feed post using the brand’s own social graphic, with a clear offer and call to action.', tools:['Meta Ads','Canva']},
- {title:'Google search ad', img:'assets/ads/ads-google-search.jpg', w:1600, h:1000, kicker:'Google Ads', desc:'A search ad with sitelinks for a high-intent local search.', tools:['Google Ads']},
- {title:'Google Ads campaign', img:'assets/ads/ads-google-campaign.jpg', w:1600, h:1000, kicker:'Google Ads', desc:'Search campaign performance and keyword list.', tools:['Google Ads']},
- {title:'Weekly lead report', img:'assets/ads/ads-weekly-report.jpg', w:1600, h:1000, kicker:'Reporting', desc:'A weekly summary of leads by source, pipeline stage and next steps.', tools:['Google Workspace','GoHighLevel']}
+ {title:'Tactic set-up tracker', img:'assets/ads/ads-tactic-setup-tracker.jpg', w:1393, h:617, kicker:'Campaign tracking', desc:'Every tactic tracked from not started to live, with owner, due date and campaign link.', tools:['Monday.com']},
+ {title:'Ad group targeting', img:'assets/ads/ads-ad-group-targeting.jpg', w:1380, h:771, kicker:'Programmatic', desc:'Targeting rails set up per ad group: environment, brand safety, geography, frequency and supply.', tools:['The Trade Desk']},
+ {title:'Campaigns and ad groups', img:'assets/ads/ads-ad-group-list.jpg', w:1380, h:748, kicker:'Programmatic', desc:'Ad groups with status, budget and pacing, managed in one view.', tools:['The Trade Desk']},
+ {title:'Optimization tracker', img:'assets/ads/ads-optimization-tracker.jpg', w:1426, h:592, kicker:'Reporting', desc:'Optimization log with impressions before and after, CTR, daily budget and spend.', tools:['Google Sheets']},
+ {title:'Account board', img:'assets/ads/ads-account-board.jpg', w:1433, h:599, kicker:'Operations', desc:'Accounts by tier with onboarding, syncs, time tracking and renewal dates.', tools:['Monday.com']},
+ {title:'Call details', img:'assets/ads/ads-google-call-details.jpg', w:710, h:497, kicker:'Google Ads', desc:'Call report by start time, duration, caller and call source.', tools:['Google Ads']},
+ {title:'Performance insights', img:'assets/ads/ads-google-insights.jpg', w:970, h:504, kicker:'Google Ads', desc:'Conversion value, cost and ROAS compared against the previous period.', tools:['Google Ads']},
+ {title:'Budget pacing', img:'assets/ads/ads-google-budget-insights.jpg', w:972, h:525, kicker:'Google Ads', desc:'Budget pacing insights to catch campaigns that are limited or underspending.', tools:['Google Ads']},
+ {title:'Account overview', img:'assets/ads/ads-google-overview.jpg', w:966, h:451, kicker:'Google Ads', desc:'Clicks, conversions, cost per conversion and cost over time.', tools:['Google Ads']},
+ {title:'Campaign results', img:'assets/ads/ads-google-campaigns.jpg', w:1012, h:383, kicker:'Google Ads', desc:'Clicks, CTR, conversions and cost per conversion by campaign.', tools:['Google Ads']},
+ {title:'Conversion segments', img:'assets/ads/ads-google-segments.jpg', w:1019, h:438, kicker:'Google Ads', desc:'Conversions broken down by segment under each campaign.', tools:['Google Ads']}
 ], {label:'Ad samples'})}</div>
  <div class="block">${head('What I support','','var(--blue)')}
  <div class="g3" style="margin-top:16px">${[
@@ -1466,11 +1472,17 @@ INIT['creative-studio'] = el => {
  drawG();
 };
 INIT.ads = () => mountCarousel('adsCar', [
- {title:'Meta campaigns', img:'assets/ads/ads-meta-campaigns.jpg', w:1600, h:1000, kicker:'Meta Ads', desc:'Lead, traffic and retargeting campaigns for a real estate brand, with the Facebook ad preview.', tools:['Meta Ads','Facebook','Instagram']},
- {title:'Facebook feed ad', img:'assets/ads/ads-facebook-feed.jpg', w:1080, h:1350, kicker:'Facebook', desc:'A sponsored feed post using the brand’s own social graphic, with a clear offer and call to action.', tools:['Meta Ads','Canva']},
- {title:'Google search ad', img:'assets/ads/ads-google-search.jpg', w:1600, h:1000, kicker:'Google Ads', desc:'A search ad with sitelinks for a high-intent local search.', tools:['Google Ads']},
- {title:'Google Ads campaign', img:'assets/ads/ads-google-campaign.jpg', w:1600, h:1000, kicker:'Google Ads', desc:'Search campaign performance and keyword list.', tools:['Google Ads']},
- {title:'Weekly lead report', img:'assets/ads/ads-weekly-report.jpg', w:1600, h:1000, kicker:'Reporting', desc:'A weekly summary of leads by source, pipeline stage and next steps.', tools:['Google Workspace','GoHighLevel']}
+ {title:'Tactic set-up tracker', img:'assets/ads/ads-tactic-setup-tracker.jpg', w:1393, h:617, kicker:'Campaign tracking', desc:'Every tactic tracked from not started to live, with owner, due date and campaign link.', tools:['Monday.com']},
+ {title:'Ad group targeting', img:'assets/ads/ads-ad-group-targeting.jpg', w:1380, h:771, kicker:'Programmatic', desc:'Targeting rails set up per ad group: environment, brand safety, geography, frequency and supply.', tools:['The Trade Desk']},
+ {title:'Campaigns and ad groups', img:'assets/ads/ads-ad-group-list.jpg', w:1380, h:748, kicker:'Programmatic', desc:'Ad groups with status, budget and pacing, managed in one view.', tools:['The Trade Desk']},
+ {title:'Optimization tracker', img:'assets/ads/ads-optimization-tracker.jpg', w:1426, h:592, kicker:'Reporting', desc:'Optimization log with impressions before and after, CTR, daily budget and spend.', tools:['Google Sheets']},
+ {title:'Account board', img:'assets/ads/ads-account-board.jpg', w:1433, h:599, kicker:'Operations', desc:'Accounts by tier with onboarding, syncs, time tracking and renewal dates.', tools:['Monday.com']},
+ {title:'Call details', img:'assets/ads/ads-google-call-details.jpg', w:710, h:497, kicker:'Google Ads', desc:'Call report by start time, duration, caller and call source.', tools:['Google Ads']},
+ {title:'Performance insights', img:'assets/ads/ads-google-insights.jpg', w:970, h:504, kicker:'Google Ads', desc:'Conversion value, cost and ROAS compared against the previous period.', tools:['Google Ads']},
+ {title:'Budget pacing', img:'assets/ads/ads-google-budget-insights.jpg', w:972, h:525, kicker:'Google Ads', desc:'Budget pacing insights to catch campaigns that are limited or underspending.', tools:['Google Ads']},
+ {title:'Account overview', img:'assets/ads/ads-google-overview.jpg', w:966, h:451, kicker:'Google Ads', desc:'Clicks, conversions, cost per conversion and cost over time.', tools:['Google Ads']},
+ {title:'Campaign results', img:'assets/ads/ads-google-campaigns.jpg', w:1012, h:383, kicker:'Google Ads', desc:'Clicks, CTR, conversions and cost per conversion by campaign.', tools:['Google Ads']},
+ {title:'Conversion segments', img:'assets/ads/ads-google-segments.jpg', w:1019, h:438, kicker:'Google Ads', desc:'Conversions broken down by segment under each campaign.', tools:['Google Ads']}
 ]);
 INIT.experience = () => {};
 INIT.toolkit = el => {
