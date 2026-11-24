@@ -1559,5 +1559,11 @@ INIT.partnership = el => {
 show(location.hash);
 }
 </script>
+<script>
+/* missing image fallback: avatar gets initials, gallery tiles and other broken images are hidden instead of showing empty boxes */
+document.addEventListener('error',function(e){var i=e.target;if(!i||i.tagName!=='IMG'||i.dataset.fb)return;i.dataset.fb='1';
+if(/jocel-portrait/.test(i.src)){i.src="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='#0073EA'/><text x='50' y='62' font-family='Arial' font-weight='700' font-size='38' fill='#fff' text-anchor='middle'>JJ</text></svg>");return}
+var t=i.closest('.gi,.ad,.shot');if(t){t.style.display='none'}else{i.style.visibility='hidden'}},true);
+</script>
 </body>
 </html>
